@@ -131,7 +131,7 @@ const ScrapDealerinLowerParel = ({ openModal }) => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Scrapiz - Scrap Dealer in Lower Parel",
-    "image": "https://www.scrapiz.in/Scrapiz-logo.png",
+    "image": "https://www.scrapiz.in/Scrapiz-logo.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": locationData.address,

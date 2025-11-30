@@ -131,7 +131,7 @@ const ScrapDealerinMaladEast = ({ openModal }) => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Scrapiz - Scrap Dealer in Malad East",
-    "image": "https://www.scrapiz.in/Scrapiz-logo.png",
+    "image": "https://www.scrapiz.in/Scrapiz-logo.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": locationData.address,

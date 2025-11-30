@@ -12,8 +12,8 @@ const WorkGallerySection = () => {
       category: 'residential',
       title: 'Society Scrap Collection - Bandra',
       description: 'Collected 500kg mixed scrap from residential society',
-      beforeImage: '/scrapiz-facility.jpeg',
-      afterImage: '/scrapiz-facility.jpeg',
+      beforeImage: '/scrapiz-facility.webp',
+      afterImage: '/scrapiz-facility.webp',
       stats: { weight: '500 kg', earnings: '₹8,500' }
     },
     {
@@ -21,8 +21,8 @@ const WorkGallerySection = () => {
       category: 'commercial',
       title: 'Office E-Waste Clearance - Andheri',
       description: 'Complete IT equipment disposal for corporate office',
-      beforeImage: '/scrapiz-facility.jpeg',
-      afterImage: '/scrapiz-facility.jpeg',
+      beforeImage: '/scrapiz-facility.webp',
+      afterImage: '/scrapiz-facility.webp',
       stats: { weight: '200 kg', earnings: '₹15,000' }
     },
     {
@@ -30,8 +30,8 @@ const WorkGallerySection = () => {
       category: 'industrial',
       title: 'Factory Metal Scrap - Goregaon',
       description: 'Industrial metal scrap collection and recycling',
-      beforeImage: '/scrapiz-facility.jpeg',
-      afterImage: '/scrapiz-facility.jpeg',
+      beforeImage: '/scrapiz-facility.webp',
+      afterImage: '/scrapiz-facility.webp',
       stats: { weight: '2 Tons', earnings: '₹65,000' }
     },
     {
@@ -39,8 +39,8 @@ const WorkGallerySection = () => {
       category: 'residential',
       title: 'Home Renovation Scrap - Kandivali',
       description: 'Old furniture and metal scrap from home renovation',
-      beforeImage: '/scrapiz-facility.jpeg',
-      afterImage: '/scrapiz-facility.jpeg',
+      beforeImage: '/scrapiz-facility.webp',
+      afterImage: '/scrapiz-facility.webp',
       stats: { weight: '150 kg', earnings: '₹4,200' }
     },
     {
@@ -48,8 +48,8 @@ const WorkGallerySection = () => {
       category: 'appliances',
       title: 'Old Appliances Pickup - Jogeshwari',
       description: 'AC, Fridge, and Washing Machine collection',
-      beforeImage: '/scrapiz-facility.jpeg',
-      afterImage: '/scrapiz-facility.jpeg',
+      beforeImage: '/scrapiz-facility.webp',
+      afterImage: '/scrapiz-facility.webp',
       stats: { weight: '3 Items', earnings: '₹7,500' }
     },
     {
@@ -57,8 +57,8 @@ const WorkGallerySection = () => {
       category: 'commercial',
       title: 'Restaurant Kitchen Scrap - Malad',
       description: 'Stainless steel and copper utensils collection',
-      beforeImage: '/scrapiz-facility.jpeg',
-      afterImage: '/scrapiz-facility.jpeg',
+      beforeImage: '/scrapiz-facility.webp',
+      afterImage: '/scrapiz-facility.webp',
       stats: { weight: '80 kg', earnings: '₹12,000' }
     }
   ];
@@ -133,6 +133,8 @@ const WorkGallerySection = () => {
                 <div className="relative overflow-hidden rounded-xl shadow-md">
                   <img
                     src={item.beforeImage}
+                    width="600"
+                    height="400"
                     alt={item.title}
                     className="w-full h-40 lg:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
@@ -211,6 +213,8 @@ const WorkGallerySection = () => {
             >
               <img
                 src={selectedImage.beforeImage}
+                width="800"
+                height="600"
                 alt={selectedImage.title}
                 className="w-full h-96 object-cover"
                 loading="lazy"

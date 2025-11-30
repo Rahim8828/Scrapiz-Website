@@ -10,42 +10,42 @@ const LocalAreaSection = () => {
       path: '/bandra',
       pickupTime: '2-3 hrs',
       highlight: 'Most Popular',
-      image: '/Scrapiz-Bandra.jpeg'
+      image: '/Scrapiz-Bandra.webp'
     },
     {
       name: 'Jogeshwari',
       path: '/jogeshwari',
       pickupTime: '1-2 hrs',
       highlight: 'Fastest Pickup',
-      image: '/Scrapiz-Jogeshwari.jpeg'
+      image: '/Scrapiz-Jogeshwari.webp'
     },
     {
       name: 'Goregaon',
       path: '/goregaon',
       pickupTime: '2-3 hrs',
       highlight: 'High Demand',
-      image: '/Scrapiz-Goregaon.jpeg'
+      image: '/Scrapiz-Goregaon.webp'
     },
     {
       name: 'Kandivali',
       path: '/kandivali',
       pickupTime: '2-4 hrs',
       highlight: 'Best Rates',
-      image: '/Scrapiz-Kandivali.jpeg'
+      image: '/Scrapiz-Kandivali.webp'
     },
     {
       name: 'Dharavi',
       path: '/dharavi',
       pickupTime: '1-2 hrs',
       highlight: 'Bulk Pickup',
-      image: '/Scrapiz-dharavi.jpeg'
+      image: '/Scrapiz-dharavi.webp'
     },
     {
       name: 'Andheri',
       path: '/locations',
       pickupTime: '2-3 hrs',
       highlight: 'Corporate Hub',
-      image: '/scrapiz-facility.jpeg'
+      image: '/scrapiz-facility.webp'
     }
   ];
 
@@ -87,6 +87,8 @@ const LocalAreaSection = () => {
               >
                 <img
                   src={area.image}
+                  width="400"
+                  height="300"
                   alt={`Scrap collection in ${area.name}`}
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"

@@ -79,7 +79,7 @@ const DemolitionServicePage = ({ openModal }) => {
       </Helmet>
 
       <section className="relative bg-cover bg-center text-white py-24 md:py-32" style={{backgroundImage: "url('/building-demolition-in-Mumbai-Scrapiz.jpeg')"}}>
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-red-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-green-900/70"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Expert Demolition Services in Mumbai</h1>
@@ -92,7 +92,7 @@ const DemolitionServicePage = ({ openModal }) => {
             <button
               onClick={() => openModal(serviceName)}
               aria-label="Get a demolition quote"
-              className="bg-white text-red-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-red-300 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-green-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-red-300 transition-all duration-300 transform hover:scale-105"
             >
               Get a Free Quote
             </button>
@@ -106,7 +106,7 @@ const DemolitionServicePage = ({ openModal }) => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Precision Demolition, Responsible Cleanup</h2>
             <p className="text-gray-600 mb-4 leading-relaxed">Scrapiz provides comprehensive demolition solutions across Mumbai. Our experienced team uses modern equipment and follows strict safety protocols to ensure every project is completed without a hitch. We specialize in controlled demolitions that minimize disruption to surrounding areas.</p>
             <p className="text-gray-600 mb-6 leading-relaxed">Post-demolition, we manage the responsible disposal and recycling of all debris, turning waste into valuable resources and ensuring a clean, ready-to-use site.</p>
-            <div className="bg-red-100 border-l-4 border-red-500 text-red-800 p-4 rounded-r-lg">
+            <div className="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-r-lg">
               <h4 className="font-bold">Safety & Insurance at Core</h4>
               <p className="text-sm">All our demolition projects are fully insured. Our team is equipped with top-tier personal protective equipment (PPE) and trained in advanced safety procedures to manage all risks effectively.</p>
             </div>
@@ -131,22 +131,22 @@ const DemolitionServicePage = ({ openModal }) => {
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">A systematic approach for safe and timely completion.</p>
           <div className="grid md:grid-cols-4 gap-8 text-center">
              <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-red-100 text-red-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">1</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">1</div>
               <h3 className="text-xl font-semibold mb-2">Survey & Plan</h3>
               <p className="text-gray-600">We conduct a site assessment and create a detailed demolition plan with a transparent quote.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-red-100 text-red-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">2</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">2</div>
               <h3 className="text-xl font-semibold mb-2">Permits</h3>
               <p className="text-gray-600">Our team assists in securing all necessary permits from municipal authorities for a compliant operation.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-red-100 text-red-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">3</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">3</div>
               <h3 className="text-xl font-semibold mb-2">Safe Demolition</h3>
               <p className="text-gray-600">We execute the demolition using specialized machinery, adhering to the highest safety standards.</p>
             </motion.div>
              <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-red-100 text-red-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">4</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">4</div>
               <h3 className="text-xl font-semibold mb-2">Debris Management</h3>
               <p className="text-gray-600">We clear the site and transport all debris for recycling and responsible disposal, leaving the site ready.</p>
             </motion.div>
@@ -191,7 +191,7 @@ const DemolitionServicePage = ({ openModal }) => {
         </div>
       </section>
       
-      <section className="from-red-600 to-red-800 bg-gradient-to-r text-white">
+      <section className="from-green-600 to-green-800 bg-gradient-to-r text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="mb-8 md:mb-0">
@@ -202,14 +202,14 @@ const DemolitionServicePage = ({ openModal }) => {
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Contact us for a quote"
-                className="w-full sm:w-auto bg-white text-red-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-red-300 transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto bg-white text-green-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-red-300 transition-all duration-300 transform hover:scale-105"
               >
                 Request a Quote
               </button>
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Chat on WhatsApp"
-                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-red-600 transition-colors duration-300 inline-flex items-center justify-center">
+                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-colors duration-300 inline-flex items-center justify-center">
                 <MessageCircle className="w-5 h-5 mr-3"/> WhatsApp Us
               </button>
             </div>

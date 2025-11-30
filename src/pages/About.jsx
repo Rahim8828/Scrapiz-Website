@@ -75,7 +75,7 @@ const About = () => {
                 <img
                   className="w-full h-auto object-cover"
                   alt="Scrapiz processing facility with a truck unloading scrap"
-                  src="/scrapiz-facility.jpeg"
+                  src="/scrapiz-facility.webp"
                   loading="lazy"
                 />
               </motion.div>

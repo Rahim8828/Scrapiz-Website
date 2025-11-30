@@ -59,7 +59,7 @@ const AluminiumScrapPage = ({ openModal }) => {
           "@type": "LocalBusiness",
           "@id": "https://www.scrapiz.in/#business",
           "name": "Scrapiz",
-          "image": "https://www.scrapiz.in/Scrapiz-logo.png",
+          "image": "https://www.scrapiz.in/Scrapiz-logo.webp",
           "telephone": "+91-8828700630",
           "email": "contact@scrapiz.in",
           "address": {

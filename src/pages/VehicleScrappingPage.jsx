@@ -79,7 +79,7 @@ const VehicleScrappingPage = ({ openModal }) => {
       </Helmet>
 
       <section className="relative bg-cover bg-center text-white py-24 md:py-32" style={{backgroundImage: "url('/vehicle-scrapping-mumbai-scrapiz.jpg')"}}>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-700/80 to-indigo-900/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-700/80 to-green-900/70"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Official Vehicle Scrapping in Mumbai</h1>
@@ -92,7 +92,7 @@ const VehicleScrappingPage = ({ openModal }) => {
             <button
               onClick={() => openModal(serviceName)}
               aria-label="Get a quote for vehicle scrapping"
-              className="bg-white text-blue-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-green-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
             >
               Get a Free Quote
             </button>
@@ -130,23 +130,23 @@ const VehicleScrappingPage = ({ openModal }) => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, y:50 }} whileInView={{ opacity: 1, y:0 }} viewport={{ once: true }} transition={{ duration: 0.7}}>
               <div className="space-y-6">
-                <div className="flex items-start"><strong className="text-blue-600 text-3xl mr-4">1.</strong><div><h4 className="font-semibold text-xl">Request a Quote</h4><p className="text-gray-600">Contact us with your vehicle details. We provide a transparent quote based on your vehicle's weight and promise the best value.</p></div></div>
-                <div className="flex items-start"><strong className="text-blue-600 text-3xl mr-4">2.</strong><div><h4 className="font-semibold text-xl">Schedule Free Pickup</h4><p className="text-gray-600">We arrange for free towing of your vehicle from your location to our certified scrapping facility, at a time that works for you.</p></div></div>
-                <div className="flex items-start"><strong className="text-blue-600 text-3xl mr-4">3.</strong><div><h4 className="font-semibold text-xl">Get Paid & Certificate</h4><p className="text-gray-600">Receive payment and the official Certificate of Destruction (COD) after your vehicle is scrapped, releasing you from all future liability.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">1.</strong><div><h4 className="font-semibold text-xl">Request a Quote</h4><p className="text-gray-600">Contact us with your vehicle details. We provide a transparent quote based on your vehicle's weight and promise the best value.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">2.</strong><div><h4 className="font-semibold text-xl">Schedule Free Pickup</h4><p className="text-gray-600">We arrange for free towing of your vehicle from your location to our certified scrapping facility, at a time that works for you.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">3.</strong><div><h4 className="font-semibold text-xl">Get Paid & Certificate</h4><p className="text-gray-600">Receive payment and the official Certificate of Destruction (COD) after your vehicle is scrapped, releasing you from all future liability.</p></div></div>
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2}} className="border rounded-xl p-8 bg-gray-50 shadow-lg">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800">Required Documents</h3>
               <p className="text-gray-600 mb-4">To ensure a legal and smooth process, please have the following ready:</p>
               <ul className="space-y-2 text-gray-600">
-                <li><span className="font-semibold text-blue-700">1. Original RC</span> (Registration Certificate) of the vehicle.</li>
-                <li><span className="font-semibold text-blue-700">2. Owner's Aadhaar Card</span> & Pan Card.</li>
-                <li><span className="font-semibold text-blue-700">3. Canceled Cheque</span> for payment transfer.</li>
-                <li><span className="font-semibold text-blue-700">4. Photos</span> of the vehicle and chassis number.</li>
+                <li><span className="font-semibold text-green-700">1. Original RC</span> (Registration Certificate) of the vehicle.</li>
+                <li><span className="font-semibold text-green-700">2. Owner's Aadhaar Card</span> & Pan Card.</li>
+                <li><span className="font-semibold text-green-700">3. Canceled Cheque</span> for payment transfer.</li>
+                <li><span className="font-semibold text-green-700">4. Photos</span> of the vehicle and chassis number.</li>
               </ul>
               <button
                 onClick={() => openModal(serviceName)}
-                className="mt-6 inline-block bg-blue-100 text-blue-800 font-bold py-3 px-6 rounded-lg hover:bg-blue-200"
+                className="mt-6 inline-block bg-green-100 text-green-800 font-bold py-3 px-6 rounded-lg hover:bg-green-200"
               >
                 Start the Process Now
               </button>
@@ -192,7 +192,7 @@ const VehicleScrappingPage = ({ openModal }) => {
         </div>
       </section>
       
-      <section className="from-blue-600 to-indigo-800 bg-gradient-to-r text-white">
+      <section className="from-green-600 to-green-800 bg-gradient-to-r text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="mb-8 md:mb-0">
@@ -203,14 +203,14 @@ const VehicleScrappingPage = ({ openModal }) => {
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Get a free quote"
-                className="w-full sm:w-auto bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto bg-white text-green-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
               >
                 Get My Quote
               </button>
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Chat on WhatsApp for vehicle scrapping"
-                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-300 inline-flex items-center justify-center"
+                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-colors duration-300 inline-flex items-center justify-center"
               >
                 <MessageCircle className="w-5 h-5 mr-3"/> WhatsApp Us
               </button>

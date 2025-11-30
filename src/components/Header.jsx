@@ -58,8 +58,10 @@ const Header = ({ openModal }) => {
           <NavLink to="/">
             <motion.div whileHover={{ scale: 1.05 }}>
               <img 
-                src="/scrapiz-logo1.png" 
+                src="/scrapiz-logo1.webp" 
                 alt="Scrapiz Logo" 
+                width="120"
+                height="96"
                 className="h-20 md:h-24 w-auto object-contain"
                 loading="lazy"
               />

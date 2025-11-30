@@ -78,7 +78,7 @@ const JunkRemovalServicePage = ({ openModal }) => {
       </Helmet>
 
       <section className="relative bg-cover bg-center text-white py-24 md:py-32" style={{backgroundImage: "url('/junk-removal-service-mumbai-Scrapiz.jpeg')"}}>
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/80 to-red-800/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-green-800/70"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Fast & Reliable Junk Removal in Mumbai</h1>
@@ -91,7 +91,7 @@ const JunkRemovalServicePage = ({ openModal }) => {
             <button
               onClick={() => openModal(serviceName)}
               aria-label="Get a free estimate for junk removal"
-              className="bg-white text-orange-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-green-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 transform hover:scale-105"
             >
               Get a Free Estimate
             </button>
@@ -129,23 +129,23 @@ const JunkRemovalServicePage = ({ openModal }) => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div initial={{ opacity: 0, y:50 }} whileInView={{ opacity: 1, y:0 }} viewport={{ once: true }} transition={{ duration: 0.7}}>
               <div className="space-y-6">
-                <div className="flex items-start"><strong className="text-orange-600 text-3xl mr-4">1.</strong><div><h4 className="font-semibold text-xl">Get a Free Estimate</h4><p className="text-gray-600">Call us or send photos of your junk. We'll give you an upfront, all-inclusive price. No hidden fees.</p></div></div>
-                <div className="flex items-start"><strong className="text-orange-600 text-3xl mr-4">2.</strong><div><h4 className="font-semibold text-xl">We Arrive & Load</h4><p className="text-gray-600">We schedule a 2-hour arrival window. Our team confirms the price on-site and gets to work loading your junk.</p></div></div>
-                <div className="flex items-start"><strong className="text-orange-600 text-3xl mr-4">3.</strong><div><h4 className="font-semibold text-xl">We Haul It Away</h4><p className="text-gray-600">We sweep up the area and haul your junk away for responsible disposal, recycling, or donation.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">1.</strong><div><h4 className="font-semibold text-xl">Get a Free Estimate</h4><p className="text-gray-600">Call us or send photos of your junk. We'll give you an upfront, all-inclusive price. No hidden fees.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">2.</strong><div><h4 className="font-semibold text-xl">We Arrive & Load</h4><p className="text-gray-600">We schedule a 2-hour arrival window. Our team confirms the price on-site and gets to work loading your junk.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">3.</strong><div><h4 className="font-semibold text-xl">We Haul It Away</h4><p className="text-gray-600">We sweep up the area and haul your junk away for responsible disposal, recycling, or donation.</p></div></div>
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2}} className="border rounded-xl p-8 bg-gray-50 shadow-lg">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800">Transparent Pricing</h3>
               <p className="text-gray-600 mb-4">Our pricing is based on the volume your junk takes up in our truck. We offer several price points.</p>
               <ul className="space-y-2 text-gray-600">
-                <li><span className="font-semibold text-orange-700">Minimum Load:</span> For a few small items.</li>
-                <li><span className="font-semibold text-orange-700">1/4 Truckload:</span> Perfect for a small cleanout.</li>
-                <li><span className="font-semibold text-orange-700">1/2 Truckload:</span> Fits a sofa and more.</li>
-                <li><span className="font-semibold text-orange-700">Full Truckload:</span> For major cleanouts.</li>
+                <li><span className="font-semibold text-green-700">Minimum Load:</span> For a few small items.</li>
+                <li><span className="font-semibold text-green-700">1/4 Truckload:</span> Perfect for a small cleanout.</li>
+                <li><span className="font-semibold text-green-700">1/2 Truckload:</span> Fits a sofa and more.</li>
+                <li><span className="font-semibold text-green-700">Full Truckload:</span> For major cleanouts.</li>
               </ul>
               <button
                 onClick={() => openModal(serviceName)}
-                className="mt-6 inline-block bg-orange-100 text-orange-800 font-bold py-3 px-6 rounded-lg hover:bg-orange-200"
+                className="mt-6 inline-block bg-green-100 text-green-800 font-bold py-3 px-6 rounded-lg hover:bg-green-200"
               >
                 Get Your Custom Quote
               </button>
@@ -191,7 +191,7 @@ const JunkRemovalServicePage = ({ openModal }) => {
         </div>
       </section>
       
-      <section className="from-orange-500 to-red-700 bg-gradient-to-r text-white">
+      <section className="from-green-500 to-green-700 bg-gradient-to-r text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="mb-8 md:mb-0">
@@ -202,14 +202,14 @@ const JunkRemovalServicePage = ({ openModal }) => {
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Get a free estimate"
-                className="w-full sm:w-auto bg-white text-orange-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto bg-white text-green-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-orange-300 transition-all duration-300 transform hover:scale-105"
               >
                 Get My Estimate
               </button>
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Chat on WhatsApp for junk removal"
-                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-orange-600 transition-colors duration-300 inline-flex items-center justify-center"
+                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-colors duration-300 inline-flex items-center justify-center"
               >
                 <MessageCircle className="w-5 h-5 mr-3"/> WhatsApp for Quote
               </button>

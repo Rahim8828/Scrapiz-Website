@@ -86,7 +86,7 @@ const ScrapCollectionPage = ({ openModal }) => {
       </Helmet>
 
       <section className="relative bg-cover bg-center text-white py-24 md:py-32" style={{backgroundImage: "url('/scrap-collection-mumbai-Scrapiz.jpeg')"}}>
-        <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-teal-800/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-green-800/70"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Hassle-Free Scrap Collection in Mumbai</h1>
@@ -195,7 +195,7 @@ const ScrapCollectionPage = ({ openModal }) => {
         </div>
       </section>
       
-      <section className="from-green-600 to-teal-700 bg-gradient-to-r text-white">
+      <section className="from-green-600 to-green-700 bg-gradient-to-r text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="mb-8 md:mb-0">

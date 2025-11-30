@@ -56,8 +56,10 @@ const Footer = () => {
           >
             <Link to="/" className="inline-block">
               <img 
-                src="/scrapiz-logo1.png" 
+                src="/scrapiz-logo1.webp" 
                 alt="Scrapiz Logo" 
+                width="100"
+                height="80"
                 className="h-16 sm:h-20 w-auto object-contain"
                 loading="lazy"
               />

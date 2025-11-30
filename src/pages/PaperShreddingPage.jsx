@@ -80,7 +80,7 @@ const PaperShreddingPage = ({ openModal }) => {
       </Helmet>
 
       <section className="relative bg-cover bg-center text-white py-24 md:py-32" style={{backgroundImage: "url('/secure-paper-shredding-service-Scrapiz.jpeg')"}}>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-indigo-800/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-green-800/70"></div>
         <div className="container mx-auto px-4 relative">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Secure Paper Shredding in Mumbai</h1>
@@ -93,7 +93,7 @@ const PaperShreddingPage = ({ openModal }) => {
             <button
               onClick={() => openModal(serviceName)}
               aria-label="Schedule a shredding service"
-              className="bg-white text-blue-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
+              className="bg-white text-green-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
             >
               Schedule a Service
             </button>
@@ -142,9 +142,9 @@ const PaperShreddingPage = ({ openModal }) => {
             <motion.div initial={{ opacity: 0, y:50 }} whileInView={{ opacity: 1, y:0 }} viewport={{ once: true }} transition={{ duration: 0.7}}>
               <h3 className="text-2xl font-semibold mb-6 text-gray-800">How It Works</h3>
               <div className="space-y-6">
-                <div className="flex items-start"><strong className="text-blue-600 text-3xl mr-4">1.</strong><div><h4 className="font-semibold text-xl">Book & Choose</h4><p className="text-gray-600">Contact us to book a service. Choose on-site (we shred at your location) or off-site (we shred at our facility) services.</p></div></div>
-                <div className="flex items-start"><strong className="text-blue-600 text-3xl mr-4">2.</strong><div><h4 className="font-semibold text-xl">Secure Collection</h4><p className="text-gray-600">Our verified team collects documents in locked bins, ensuring a secure chain of custody from your door to ours.</p></div></div>
-                <div className="flex items-start"><strong className="text-blue-600 text-3xl mr-4">3.</strong><div><h4 className="font-semibold text-xl">Certified Destruction</h4><p className="text-gray-600">We shred documents to the highest security standards and provide a formal Certificate of Destruction for your records.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">1.</strong><div><h4 className="font-semibold text-xl">Book & Choose</h4><p className="text-gray-600">Contact us to book a service. Choose on-site (we shred at your location) or off-site (we shred at our facility) services.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">2.</strong><div><h4 className="font-semibold text-xl">Secure Collection</h4><p className="text-gray-600">Our verified team collects documents in locked bins, ensuring a secure chain of custody from your door to ours.</p></div></div>
+                <div className="flex items-start"><strong className="text-green-600 text-3xl mr-4">3.</strong><div><h4 className="font-semibold text-xl">Certified Destruction</h4><p className="text-gray-600">We shred documents to the highest security standards and provide a formal Certificate of Destruction for your records.</p></div></div>
               </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2}} className="border rounded-xl p-8 bg-gray-50 shadow-lg">
@@ -164,7 +164,7 @@ const PaperShreddingPage = ({ openModal }) => {
               </table>
               <button
                 onClick={() => openModal(serviceName)}
-                className="mt-6 inline-block bg-blue-100 text-blue-800 font-bold py-3 px-6 rounded-lg hover:bg-blue-200"
+                className="mt-6 inline-block bg-green-100 text-green-800 font-bold py-3 px-6 rounded-lg hover:bg-green-200"
               >
                 Get a Custom Quote
               </button>
@@ -210,7 +210,7 @@ const PaperShreddingPage = ({ openModal }) => {
         </div>
       </section>
       
-      <section className="from-blue-600 to-indigo-800 bg-gradient-to-r text-white">
+      <section className="from-green-600 to-green-800 bg-gradient-to-r text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="mb-8 md:mb-0">
@@ -221,14 +221,14 @@ const PaperShreddingPage = ({ openModal }) => {
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Get a shredding quote"
-                className="w-full sm:w-auto bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto bg-white text-green-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-300 transform hover:scale-105"
               >
                 Get a Free Quote
               </button>
               <button
                 onClick={() => openModal(serviceName)}
                 aria-label="Chat on WhatsApp"
-                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-blue-600 transition-colors duration-300 inline-flex items-center justify-center"
+                className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-colors duration-300 inline-flex items-center justify-center"
               >
                 <MessageCircle className="w-5 h-5 mr-3"/> WhatsApp Us
               </button>

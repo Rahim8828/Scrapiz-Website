@@ -88,7 +88,7 @@ const DismantlingPage = ({ openModal }) => {
 
       {/* Hero Section */}
        <section className="relative bg-cover bg-center text-white py-24 md:py-32" style={{backgroundImage: "url('/industrial-dismantling-services-Scrapiz.jpeg')"}}>
-          <div className="absolute inset-0 bg-gradient-to-r from-yellow-600/80 to-gray-800/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-600/80 to-gray-800/70"></div>
           <div className="container mx-auto px-4 relative">
               <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -103,14 +103,14 @@ const DismantlingPage = ({ openModal }) => {
                       Unlock the hidden value in your old assets. We offer expert dismantling for industrial machinery, office infrastructure, and more, with a focus on asset recovery.
                   </p>
                   <div className="flex justify-center items-center flex-wrap gap-4 mb-8 text-sm">
-                      <span className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1"><ShieldCheck className="w-4 h-4 mr-2 text-yellow-300" /> Safe & Compliant</span>
-                      <span className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1"><Recycle className="w-4 h-4 mr-2 text-yellow-300" /> Maximum Asset Recovery</span>
-                      <span className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1"><IndianRupee className="w-4 h-4 mr-2 text-yellow-300" /> Highest Scrap Value</span>
+                      <span className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1"><ShieldCheck className="w-4 h-4 mr-2 text-green-300" /> Safe & Compliant</span>
+                      <span className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1"><Recycle className="w-4 h-4 mr-2 text-green-300" /> Maximum Asset Recovery</span>
+                      <span className="flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1"><IndianRupee className="w-4 h-4 mr-2 text-green-300" /> Highest Scrap Value</span>
                   </div>
                   <button
                       onClick={() => openModal(serviceName)}
                       aria-label="Request a dismantling quote"
-                      className="bg-white text-yellow-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300 transform hover:scale-105"
+                      className="bg-white text-green-700 font-bold py-3 px-10 rounded-full shadow-2xl hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-300 transform hover:scale-105"
                   >
                       Enquire Now
                   </button>
@@ -129,7 +129,7 @@ const DismantlingPage = ({ openModal }) => {
             <p className="text-gray-600 mb-6 leading-relaxed">
                  Our skilled technicians ensure that every component is carefully handled, segregated, and prepared for recycling or resale.
             </p>
-            <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-r-lg">
+            <div className="bg-green-100 border-l-4 border-green-500 text-green-800 p-4 rounded-r-lg">
                 <h4 className="font-bold">Safety & Precision First</h4>
                 <p className="text-sm">Our dismantling processes are meticulously planned to prevent accidents and damage to property. We use specialized tools and adhere to strict safety guidelines for every project.</p>
             </div>
@@ -137,10 +137,10 @@ const DismantlingPage = ({ openModal }) => {
           <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2}} className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
             <h3 className="text-2xl font-semibold text-gray-800 mb-5">We Dismantle:</h3>
             <ul className="space-y-4 text-gray-700">
-              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-yellow-600 flex-shrink-0" /> <div><strong>Industrial Machinery:</strong> Lathes, CNC machines, generators, turbines.</div></li>
-              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-yellow-600 flex-shrink-0" /> <div><strong>Factory & Plant Units:</strong> Production lines, boilers, chillers, storage tanks.</div></li>
-              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-yellow-600 flex-shrink-0" /> <div><strong>Office & IT Infra:</strong> Workstations, partitions, server racks, cabling.</div></li>
-              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-yellow-600 flex-shrink-0" /> <div><strong>Electrical Systems:</strong> Transformers, control panels, high-voltage cables.</div></li>
+              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-green-600 flex-shrink-0" /> <div><strong>Industrial Machinery:</strong> Lathes, CNC machines, generators, turbines.</div></li>
+              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-green-600 flex-shrink-0" /> <div><strong>Factory & Plant Units:</strong> Production lines, boilers, chillers, storage tanks.</div></li>
+              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-green-600 flex-shrink-0" /> <div><strong>Office & IT Infra:</strong> Workstations, partitions, server racks, cabling.</div></li>
+              <li className="flex items-start"><Wrench className="w-6 h-6 mr-4 text-green-600 flex-shrink-0" /> <div><strong>Electrical Systems:</strong> Transformers, control panels, high-voltage cables.</div></li>
             </ul>
           </motion.div>
         </div>
@@ -153,17 +153,17 @@ const DismantlingPage = ({ openModal }) => {
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">A clear process from valuation to final payment.</p>
           <div className="grid md:grid-cols-3 gap-8 text-center">
              <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-yellow-100 text-yellow-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">1</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">1</div>
               <h3 className="text-xl font-semibold mb-2">Asset Evaluation</h3>
               <p className="text-gray-600">We assess your assets (machinery, structures) to provide a comprehensive valuation and clear project scope.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-yellow-100 text-yellow-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">2</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">2</div>
               <h3 className="text-xl font-semibold mb-2">Systematic Dismantling</h3>
               <p className="text-gray-600">Our expert team carefully dismantles the equipment, segregating materials by type and value.</p>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5}} className="relative bg-white p-6 rounded-xl">
-              <div className="bg-yellow-100 text-yellow-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">3</div>
+              <div className="bg-green-100 text-green-600 w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center text-3xl font-bold">3</div>
               <h3 className="text-xl font-semibold mb-2">Recovery & Payment</h3>
               <p className="text-gray-600">We weigh recovered scrap on-site and provide instant payment, maximizing your returns.</p>
             </motion.div>
@@ -211,22 +211,22 @@ const DismantlingPage = ({ openModal }) => {
       </section>
       
       {/* CTA Strip */}
-      <section className="from-yellow-500 to-yellow-700 bg-gradient-to-r text-white">
+      <section className="from-green-500 to-green-700 bg-gradient-to-r text-white">
         <div className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="mb-8 md:mb-0">
               <h2 className="text-3xl md:text-4xl font-bold mb-2">Maximize Your Asset Value</h2>
-              <p className="text-yellow-100 max-w-xl">Discuss your dismantling project with our engineers for a custom recovery plan.</p>
+              <p className="text-green-100 max-w-xl">Discuss your dismantling project with our engineers for a custom recovery plan.</p>
             </div>
             <div className="flex-shrink-0 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                 <button
                   onClick={() => openModal(serviceName)}
                   aria-label="Contact us for a dismantling project"
-                  className="w-full sm:w-auto bg-white text-yellow-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-yellow-300 transition-all duration-300 transform hover:scale-105"
+                  className="w-full sm:w-auto bg-white text-green-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-green-300 transition-all duration-300 transform hover:scale-105"
                 >
                   Get a Quote
                 </button>
-              <a href="tel:+918828700630" aria-label="Call Scrapiz" className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-yellow-700 transition-colors duration-300 inline-flex items-center justify-center">
+              <a href="tel:+918828700630" aria-label="Call Scrapiz" className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-white hover:text-green-700 transition-colors duration-300 inline-flex items-center justify-center">
                 <Phone className="w-5 h-5 mr-3"/> Call an Expert
               </a>
             </div>

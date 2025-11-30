@@ -31,7 +31,7 @@ const Home = ({ openModal }) => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Scrapiz GreenTech Pvt. Ltd.",
-    "image": "https://www.scrapiz.in/scrapiz-facility.jpeg",
+    "image": "https://www.scrapiz.in/scrapiz-facility.webp",
     "@id": "https://www.scrapiz.in",
     "url": "https://www.scrapiz.in",
     "telephone": "+91-8828700630",
@@ -90,7 +90,7 @@ const Home = ({ openModal }) => {
         <meta property="og:url" content="https://www.scrapiz.in/" />
         <meta property="og:title" content="Scrapiz - Sell Your Scrap Online Easily | Best Rates & Instant Pickup" />
         <meta property="og:description" content="Sell your scrap online with Scrapiz. Get instant pickup, best rates, and hassle-free process. Metal, plastic, e-waste, paper scrap - we buy everything at competitive prices." />
-        <meta property="og:image" content="https://www.scrapiz.in/scrapiz-facility.jpeg" />
+        <meta property="og:image" content="https://www.scrapiz.in/scrapiz-facility.webp" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="Scrapiz" />
@@ -101,7 +101,7 @@ const Home = ({ openModal }) => {
         <meta name="twitter:site" content="@scrapiz" />
         <meta name="twitter:title" content="Scrapiz - Sell Your Scrap Online Easily | Best Rates & Instant Pickup" />
         <meta name="twitter:description" content="Sell your scrap online with Scrapiz. Get instant pickup, best rates, and hassle-free process. Metal, plastic, e-waste, paper scrap - we buy everything at competitive prices." />
-        <meta name="twitter:image" content="https://www.scrapiz.in/scrapiz-facility.jpeg" />
+        <meta name="twitter:image" content="https://www.scrapiz.in/scrapiz-facility.webp" />
         <meta name="twitter:creator" content="@scrapiz" />
         
         {/* Additional SEO */}

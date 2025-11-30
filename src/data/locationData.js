@@ -133,7 +133,7 @@ export const locationData = {
     
     // Images
     images: {
-      hero: '/Scrapiz-Bandra.jpeg',
+      hero: '/Scrapiz-Bandra.webp',
       alt: 'Scrapiz Bandra Shop'
     }
   },
@@ -256,7 +256,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Scrapiz-Bandra-East.jpeg',
+      hero: '/Scrapiz-Bandra-East.webp',
       alt: 'Scrapiz Bandra East Shop'
     }
   },
@@ -378,7 +378,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Shop-No-07-Dharavi.jpeg',
+      hero: '/Shop-No-07-Dharavi.webp',
       alt: 'Scrapiz Dharavi Shop'
     }
   },
@@ -498,7 +498,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Dharavi-Koliwada.jpeg',
+      hero: '/Dharavi-Koliwada.webp',
       alt: 'Scrapiz Dharavi Koliwada Shop'
     }
   },
@@ -621,7 +621,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Scrapiz-Goregaon.jpeg',
+      hero: '/Scrapiz-Goregaon.webp',
       alt: 'Scrapiz Goregaon Shop'
     }
   },
@@ -744,7 +744,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Scrapiz-Jogeshwari.jpeg',
+      hero: '/Scrapiz-Jogeshwari.webp',
       alt: 'Scrapiz Jogeshwari'
     }
   },
@@ -868,7 +868,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Scrapiz-Kandivali.jpeg',
+      hero: '/Scrapiz-Kandivali.webp',
       alt: 'Scrapiz Kandivali Shop'
     }
   },
@@ -991,7 +991,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Mahim-West.jpeg',
+      hero: '/Mahim-West.webp',
       alt: 'Scrapiz Mahim Shop'
     }
   },
@@ -1114,7 +1114,7 @@ export const locationData = {
     ],
     
     images: {
-      hero: '/Scrapiz-Nalasopara.jpeg',
+      hero: '/Scrapiz-Nalasopara.webp',
       alt: 'Scrapiz Nalasopara Shop'
     }
   }

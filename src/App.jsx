@@ -25,6 +25,35 @@ const Dharavi = lazy(() => import('./pages/Dharavi'));
 const Nalasopara = lazy(() => import('./pages/Nalasopara'));
 const DharaviKoliwada = lazy(() => import('./pages/DharaviKoliwada'));
 const Goregaon = lazy(() => import('./pages/Goregaon'));
+const AndheriWest = lazy(() => import('./Extra Location pages /ScrapDealerinAndheri'));
+const AndheriEast = lazy(() => import('./Extra Location pages /ScrapDealerinAndheriEast'));
+const JogeshwariWest = lazy(() => import('./Extra Location pages /ScrapDealerinJogeshwariWest'));
+const JogeshwariEast = lazy(() => import('./Extra Location pages /ScrapDealerinJogeshwariEast'));
+const GoregaonEast = lazy(() => import('./Extra Location pages /ScrapDealerinGoregaonEast'));
+const GoregaonWest = lazy(() => import('./Extra Location pages /ScrapDealerinGoregaonWest'));
+const MaladEast = lazy(() => import('./Extra Location pages /ScrapDealerinMaladEast'));
+const MaladWest = lazy(() => import('./Extra Location pages /ScrapDealerinMaladWest'));
+const KandivaliEast = lazy(() => import('./Extra Location pages /ScrapDealerinKandivaliEast'));
+const KandivaliWest = lazy(() => import('./Extra Location pages /ScrapDealerinKandivaliWest'));
+const Sion = lazy(() => import('./Extra Location pages /ScrapDealerinSion'));
+const Kurla = lazy(() => import('./Extra Location pages /ScrapDealerinKurla'));
+const Chembur = lazy(() => import('./Extra Location pages /ScrapDealerinChembur'));
+const GhatkoparEast = lazy(() => import('./Extra Location pages /ScrapDealerinGhatkoparEast'));
+const GhatkoparWest = lazy(() => import('./Extra Location pages /ScrapDealerinGhatkoparWest'));
+const Vidyavihar = lazy(() => import('./Extra Location pages /ScrapDealerinVidyavihar'));
+const Mulund = lazy(() => import('./Extra Location pages /ScrapDealerinMulund'));
+const Bhandup = lazy(() => import('./Extra Location pages /ScrapDealerinBhandup'));
+const Vikhroli = lazy(() => import('./Extra Location pages /ScrapDealerinVikhroli'));
+const Wadala = lazy(() => import('./Extra Location pages /ScrapDealerinWadala'));
+const LowerParel = lazy(() => import('./Extra Location pages /ScrapDealerinLowerParel'));
+const Worli = lazy(() => import('./Extra Location pages /ScrapDealerinWorli'));
+const Byculla = lazy(() => import('./Extra Location pages /ScrapDealerinByculla'));
+const GrantRoad = lazy(() => import('./Extra Location pages /ScrapDealerinGrantRoad'));
+const CST = lazy(() => import('./Extra Location pages /ScrapDealerinCST'));
+const Colaba = lazy(() => import('./Extra Location pages /ScrapDealerinColaba'));
+const Fort = lazy(() => import('./Extra Location pages /ScrapDealerinFort'));
+const DadarEast = lazy(() => import('./Extra Location pages /ScrapDealerinDadarEast'));
+const DadarWest = lazy(() => import('./Extra Location pages /ScrapDealerinDadarWest'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
 const ScrapCollectionPage = lazy(() => import('./pages/ScrapCollectionPage'));
@@ -110,6 +139,35 @@ function App() {
               <Route path="/nalasopara" element={renderWithProps(<Nalasopara />, { openModal })} />
               <Route path="/dharavi-koliwada" element={renderWithProps(<DharaviKoliwada />, { openModal })} />
               <Route path="/goregaon" element={renderWithProps(<Goregaon />, { openModal })} />
+              <Route path="/scrap-dealer-in-andheri" element={renderWithProps(<AndheriWest />, { openModal })} />
+              <Route path="/scrap-dealer-in-andheri-east" element={renderWithProps(<AndheriEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-jogeshwari-west" element={renderWithProps(<JogeshwariWest />, { openModal })} />
+              <Route path="/scrap-dealer-in-jogeshwari-east" element={renderWithProps(<JogeshwariEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-goregaon-east" element={renderWithProps(<GoregaonEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-goregaon-west" element={renderWithProps(<GoregaonWest />, { openModal })} />
+              <Route path="/scrap-dealer-in-malad-east" element={renderWithProps(<MaladEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-malad-west" element={renderWithProps(<MaladWest />, { openModal })} />
+              <Route path="/scrap-dealer-in-kandivali-east" element={renderWithProps(<KandivaliEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-kandivali-west" element={renderWithProps(<KandivaliWest />, { openModal })} />
+              <Route path="/scrap-dealer-in-sion" element={renderWithProps(<Sion />, { openModal })} />
+              <Route path="/scrap-dealer-in-kurla" element={renderWithProps(<Kurla />, { openModal })} />
+              <Route path="/scrap-dealer-in-chembur" element={renderWithProps(<Chembur />, { openModal })} />
+              <Route path="/scrap-dealer-in-ghatkopar-east" element={renderWithProps(<GhatkoparEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-ghatkopar-west" element={renderWithProps(<GhatkoparWest />, { openModal })} />
+              <Route path="/scrap-dealer-in-vidyavihar" element={renderWithProps(<Vidyavihar />, { openModal })} />
+              <Route path="/scrap-dealer-in-mulund" element={renderWithProps(<Mulund />, { openModal })} />
+              <Route path="/scrap-dealer-in-bhandup" element={renderWithProps(<Bhandup />, { openModal })} />
+              <Route path="/scrap-dealer-in-vikhroli" element={renderWithProps(<Vikhroli />, { openModal })} />
+              <Route path="/scrap-dealer-in-wadala" element={renderWithProps(<Wadala />, { openModal })} />
+              <Route path="/scrap-dealer-in-lower-parel" element={renderWithProps(<LowerParel />, { openModal })} />
+              <Route path="/scrap-dealer-in-worli" element={renderWithProps(<Worli />, { openModal })} />
+              <Route path="/scrap-dealer-in-byculla" element={renderWithProps(<Byculla />, { openModal })} />
+              <Route path="/scrap-dealer-in-grant-road" element={renderWithProps(<GrantRoad />, { openModal })} />
+              <Route path="/scrap-dealer-in-cst" element={renderWithProps(<CST />, { openModal })} />
+              <Route path="/scrap-dealer-in-colaba" element={renderWithProps(<Colaba />, { openModal })} />
+              <Route path="/scrap-dealer-in-fort" element={renderWithProps(<Fort />, { openModal })} />
+              <Route path="/scrap-dealer-in-dadar-east" element={renderWithProps(<DadarEast />, { openModal })} />
+              <Route path="/scrap-dealer-in-dadar-west" element={renderWithProps(<DadarWest />, { openModal })} />
               <Route path="/blog" element={renderWithProps(<Blog />, { openModal })} />
               <Route path="/blog/:slug" element={renderWithProps(<BlogPost />, { openModal })} />
               <Route path="/services/scrap-collection" element={renderWithProps(<ScrapCollectionPage />, { openModal })} />

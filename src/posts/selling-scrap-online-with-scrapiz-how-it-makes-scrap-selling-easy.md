@@ -3,7 +3,7 @@ title: "Selling Scrap Online with Scrapiz – How It Makes Scrap Selling Easy"
 description: "Learn how Selling Scrap Online with Scrapiz helps you earn more with safe recycling, doorstep pickups, transparent rates, and instant payments in Mumbai."
 date: "2025-09-18"
 author: "Scrapiz Team"
-featuredImage: "/Selling Scrap Online With Scrapiz.jpeg"
+featuredImage: "/Selling Scrap Online With Scrapiz.webp"
 readTime: "7 min read"
 category: "Recycling"
 ---
