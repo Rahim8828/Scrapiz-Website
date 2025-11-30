@@ -23,7 +23,6 @@ const LocationMap = ({ location }) => {
 
   // Validate required geo data
   if (!geo || !geo.mapEmbedUrl || !geo.latitude || !geo.longitude) {
-    console.error(`Missing geo data for location: ${name}`);
     return null;
   }
 
