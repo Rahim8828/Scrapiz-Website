@@ -32,7 +32,7 @@ const FloatingWhatsApp = () => {
             <div className="bg-green-600 p-3 text-white">
               <div className="flex items-center gap-2">
                 <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center">
-                  <img src="/scrapiz-logo1.png" alt="Scrapiz" className="w-7 h-7 object-contain" />
+                  <img src="/scrapiz-logo1.png" alt="Scrapiz" className="w-7 h-7 object-contain" loading="lazy" />
                 </div>
                 <div>
                   <h4 className="font-bold text-sm">Scrapiz Support</h4>

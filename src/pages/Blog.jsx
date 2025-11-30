@@ -112,6 +112,7 @@ const Blog = () => {
                         src={post.featuredImage} 
                         alt={post.title} 
                         className="w-full h-44 sm:h-48 md:h-56 object-cover transform group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
                       />
                        <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition-all duration-300"></div>
                     </Link>

@@ -89,6 +89,7 @@ const LocalAreaSection = () => {
                   src={area.image}
                   alt={`Scrap collection in ${area.name}`}
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
                 

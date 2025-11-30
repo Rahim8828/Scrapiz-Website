@@ -76,6 +76,7 @@ const About = () => {
                   className="w-full h-auto object-cover"
                   alt="Scrapiz processing facility with a truck unloading scrap"
                   src="/scrapiz-facility.jpeg"
+                  loading="lazy"
                 />
               </motion.div>
               <motion.div
@@ -107,7 +108,7 @@ const About = () => {
                 className="space-y-3 sm:space-y-4 bg-white p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-md"
               >
                 <div className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-blue-500 text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-500 to-green-600 text-white rounded-xl flex items-center justify-center flex-shrink-0">
                     <Eye className="w-6 h-6 sm:w-8 sm:h-8" />
                   </div>
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">Our Vision</h3>
@@ -122,7 +123,7 @@ const About = () => {
                 className="space-y-3 sm:space-y-4 bg-white p-6 sm:p-8 rounded-xl sm:rounded-2xl shadow-md"
               >
                 <div className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-red-500 to-orange-500 text-white rounded-xl flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-green-600 to-green-700 text-white rounded-xl flex items-center justify-center flex-shrink-0">
                     <Target className="w-6 h-6 sm:w-8 sm:h-8" />
                   </div>
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800">Our Mission</h3>

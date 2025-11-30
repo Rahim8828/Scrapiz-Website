@@ -61,6 +61,7 @@ const Header = ({ openModal }) => {
                 src="/scrapiz-logo1.png" 
                 alt="Scrapiz Logo" 
                 className="h-20 md:h-24 w-auto object-contain"
+                loading="lazy"
               />
             </motion.div>
           </NavLink>

@@ -1,0 +1,182 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RecyclingCenter",
+      "@id": "https://www.scrapiz.in/bandra#business",
+      "name": "Scrapiz Bandra - Scrap Buyers & Scrap Dealers in Mumbai",
+      "description": "Sell your scrap in Bandra with Scrapiz – reliable scrap buyers in Mumbai. We provide free pickup, digital weighing, and eco-friendly recycling",
+      "image": "https://www.scrapiz.in/Scrapiz-Bandra.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R15, Service Road Y Colony, Bandra East",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400051",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.045566,
+        "longitude": 72.771573
+      },
+      "telephone": "+918828795435",
+      "email": "Contact@scrapiz.in",
+      "url": "https://www.scrapiz.in/bandra",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "09:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "09:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
+          "opens": "09:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "09:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "09:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "09:00",
+          "closes": "22:00"
+        }
+      ],
+      "priceRange": "$$",
+      "areaServed": {
+        "@type": "City",
+        "name": "Bandra"
+      },
+      "hasMap": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57985.476447900226!2d72.77157334863281!3d19.045566400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c98b02f3e191%3A0x20e6ed1af35d3949!2sScrapiz!5e1!3m2!1sen!2sin!4v1757275021931!5m2!1sen!2sin"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.scrapiz.in/bandra#service",
+      "serviceType": "Scrap Collection and Recycling",
+      "provider": {
+        "@id": "https://www.scrapiz.in/bandra#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bandra"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Scrap Materials Accepted",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Iron & Steel Scrap Collection",
+              "description": "Collection and recycling of iron and steel scrap materials"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Aluminum Scrap Collection",
+              "description": "Collection and recycling of aluminum scrap materials"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Copper Scrap Collection",
+              "description": "Collection and recycling of copper scrap materials"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-Waste Collection",
+              "description": "Collection and recycling of electronic waste"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Paper & Plastic Scrap Collection",
+              "description": "Collection and recycling of paper and plastic materials"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.scrapiz.in/bandra#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Q1: Do you provide doorstep scrap pickup in Bandra, and is there a minimum quantity required for pickup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Scrapiz offers free doorstep scrap pickup in Bandra, Mumbai. There is no strict minimum quantity — most normal household scrap (20–30 kg) is picked up for free. For very small quantities, a nominal ₹60 convenience fee may apply."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q2: What scrap items do you buy in Bandra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our Scrapiz Bandra scrap buyers accept all types of materials including iron scrap, steel scrap, aluminum scrap, copper scrap, paper waste, plastic scrap, furniture scrap, and electronic e-waste in Bandra. We provide the best scrap rates in Bandra for all items."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q3: How can I book Scrapiz scrap service in Bandra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Booking our scrap dealer service in Bandra Mumbai is quick and easy. Simply call us at +91 8828795435 or use WhatsApp for instant booking. Our online scrap pickup in Bandra saves you time and effort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q4: Do you offer the best scrap rates in Bandra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Scrapiz is known as the top scrap dealer in Bandra because we provide the most competitive and updated scrap prices in Bandra Mumbai. Whether you want to sell scrap online in Bandra West or call us for doorstep pickup, we guarantee the best value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q5: Do you serve nearby areas from Bandra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely! Along with scrap pickup in Bandra, we also serve Khar, Santacruz, Mahim, and Dadar. Scrapiz is your trusted choice for scrap buyers in Bandra and nearby suburbs of Mumbai."
+          }
+        }
+      ]
+    }
+  ]
+}

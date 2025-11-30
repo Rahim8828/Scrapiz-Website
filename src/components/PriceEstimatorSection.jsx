@@ -6,18 +6,18 @@ const PriceEstimatorSection = () => {
   const [selectedItems, setSelectedItems] = useState({});
 
   const scrapItems = [
-    { id: 'newspaper', name: 'Newspaper', rate: 15, unit: 'kg', icon: '📰', category: 'Paper' },
-    { id: 'cardboard', name: 'Cardboard', rate: 11, unit: 'kg', icon: '📦', category: 'Paper' },
-    { id: 'iron', name: 'Iron/Steel', rate: 30, unit: 'kg', icon: '🔩', category: 'Metal' },
-    { id: 'aluminium', name: 'Aluminium', rate: 115, unit: 'kg', icon: '🥫', category: 'Metal' },
-    { id: 'copper', name: 'Copper', rate: 465, unit: 'kg', icon: '🔶', category: 'Metal' },
-    { id: 'brass', name: 'Brass', rate: 330, unit: 'kg', icon: '🔔', category: 'Metal' },
-    { id: 'plastic', name: 'Plastic (Hard)', rate: 12, unit: 'kg', icon: '🔲', category: 'Plastic' },
-    { id: 'pet', name: 'PET Bottles', rate: 16, unit: 'kg', icon: '🍼', category: 'Plastic' },
-    { id: 'ewaste', name: 'E-Waste', rate: 50, unit: 'kg', icon: '💻', category: 'E-Waste' },
-    { id: 'ac', name: 'Old AC', rate: 4000, unit: 'piece', icon: '❄️', category: 'Appliances' },
-    { id: 'fridge', name: 'Refrigerator', rate: 1500, unit: 'piece', icon: '🧊', category: 'Appliances' },
-    { id: 'washing', name: 'Washing Machine', rate: 1000, unit: 'piece', icon: '🫧', category: 'Appliances' },
+    { id: 'newspaper', name: 'Newspaper', minRate: 12, maxRate: 18, rate: 15, unit: 'kg', icon: '📰', category: 'Paper' },
+    { id: 'cardboard', name: 'Cardboard', minRate: 8, maxRate: 14, rate: 11, unit: 'kg', icon: '📦', category: 'Paper' },
+    { id: 'iron', name: 'Iron/Steel', minRate: 25, maxRate: 40, rate: 32, unit: 'kg', icon: '🔩', category: 'Metal' },
+    { id: 'aluminium', name: 'Aluminium', minRate: 90, maxRate: 140, rate: 115, unit: 'kg', icon: '🥫', category: 'Metal' },
+    { id: 'copper', name: 'Copper', minRate: 400, maxRate: 550, rate: 475, unit: 'kg', icon: '🔶', category: 'Metal' },
+    { id: 'brass', name: 'Brass', minRate: 280, maxRate: 380, rate: 330, unit: 'kg', icon: '🔔', category: 'Metal' },
+    { id: 'plastic', name: 'Plastic (Hard)', minRate: 8, maxRate: 16, rate: 12, unit: 'kg', icon: '🔲', category: 'Plastic' },
+    { id: 'pet', name: 'PET Bottles', minRate: 12, maxRate: 20, rate: 16, unit: 'kg', icon: '🍼', category: 'Plastic' },
+    { id: 'ewaste', name: 'E-Waste', minRate: 30, maxRate: 80, rate: 55, unit: 'kg', icon: '💻', category: 'E-Waste' },
+    { id: 'ac', name: 'Old AC', minRate: 2500, maxRate: 6000, rate: 4000, unit: 'piece', icon: '❄️', category: 'Appliances' },
+    { id: 'fridge', name: 'Refrigerator', minRate: 800, maxRate: 2500, rate: 1500, unit: 'piece', icon: '🧊', category: 'Appliances' },
+    { id: 'washing', name: 'Washing Machine', minRate: 600, maxRate: 1800, rate: 1000, unit: 'piece', icon: '🫧', category: 'Appliances' },
   ];
 
   const handleQuantityChange = (id, value) => {
@@ -110,9 +110,9 @@ const PriceEstimatorSection = () => {
                       <div className="text-3xl flex-shrink-0">{item.icon}</div>
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-bold text-gray-900 mb-0.5">{item.name}</p>
-                        <div className="flex items-center gap-1">
-                          <IndianRupee className="w-3 h-3 text-green-600" />
-                          <span className="text-sm font-bold text-green-600">{item.rate}</span>
+                        <div className="flex items-center gap-0.5">
+                          <IndianRupee className="w-3 h-3 text-green-600 flex-shrink-0" />
+                          <span className="text-sm font-bold text-green-600">{item.minRate}-{item.maxRate}</span>
                           <span className="text-xs text-gray-500">/{item.unit}</span>
                         </div>
                       </div>
@@ -197,7 +197,17 @@ const PriceEstimatorSection = () => {
                           ₹{totalEstimate.toLocaleString()}
                         </motion.span>
                       </div>
-                      <p className="text-xs text-green-200">*Final price may vary after quality inspection</p>
+                      <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-2.5 mt-3">
+                        <p className="text-xs text-amber-100 font-semibold mb-1 flex items-center gap-1.5">
+                          <svg className="w-3.5 h-3.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                          </svg>
+                          Tentative Estimate
+                        </p>
+                        <p className="text-xs text-green-100 leading-relaxed">
+                          Rates vary based on market conditions, quality & quantity. Call for exact pricing.
+                        </p>
+                      </div>
                     </div>
 
                     <button
@@ -234,6 +244,32 @@ const PriceEstimatorSection = () => {
               </motion.div>
             </div>
           </div>
+
+          {/* Rate Disclaimer */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-8 max-w-4xl mx-auto"
+          >
+            <div className="bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-4 rounded-lg shadow-sm">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0">
+                  <svg className="w-5 h-5 text-amber-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-semibold text-amber-800 mb-1">Important Note About Estimates</p>
+                  <p className="text-xs text-amber-700 leading-relaxed">
+                    <strong>These are tentative estimates only.</strong> Actual prices may vary based on current market conditions, material quality, purity, quantity, and physical inspection. 
+                    Rates are updated regularly but can fluctuate daily. For the most accurate pricing and to schedule a pickup, please call us at 
+                    <a href="tel:+918828700630" className="font-bold text-amber-900 hover:underline ml-1">+91 8828700630</a> or get a quote on WhatsApp.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

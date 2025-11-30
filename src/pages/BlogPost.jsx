@@ -133,6 +133,7 @@ const BlogPost = () => {
                     src={post.featuredImage} 
                     alt={post.title}
                     className="w-full h-auto object-cover"
+                    loading="lazy"
                     />
                 </motion.div>
             )}

@@ -74,6 +74,7 @@ const AppPromotionSection = () => {
                   className="h-14 lg:h-16 w-auto rounded-xl" 
                   alt="Get it on Google Play" 
                   src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                  loading="lazy"
                 />
               </motion.button>
               <motion.button 
@@ -86,6 +87,7 @@ const AppPromotionSection = () => {
                   className="h-14 lg:h-16 w-auto rounded-xl" 
                   alt="Download on the App Store" 
                   src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                  loading="lazy"
                 />
               </motion.button>
             </div>
@@ -108,6 +110,7 @@ const AppPromotionSection = () => {
                   src="/Scrapiz-App-Screenshot.jpg"
                   alt="Scrapiz App Interface - Schedule pickups and track earnings"
                   className="relative rounded-3xl lg:rounded-[2.5rem] shadow-2xl w-full object-cover hover:shadow-3xl transition-shadow duration-300"
+                  loading="lazy"
                 />
                 
                 {/* Decorative elements */}

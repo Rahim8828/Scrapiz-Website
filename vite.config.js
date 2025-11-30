@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import path from "path"
 import react from "@vitejs/plugin-react"
 import { defineConfig } from "vite"
@@ -91,5 +92,10 @@ export default defineConfig({
     },
     // Reduce chunk size warnings threshold
     chunkSizeWarningLimit: 600,
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.js',
   },
 })

@@ -159,6 +159,26 @@ const BrassScrapPage = ({ openModal }) => {
               </div>
               <div className="md:hidden divide-y">{priceTable.map((item, i) => (<div key={i} className="p-4 flex justify-between items-center"><span className="text-gray-800 font-medium text-sm">{item.type}</span><span className="text-green-600 font-bold">{item.price}</span></div>))}</div>
             </div>
+            
+            {/* Rate Disclaimer */}
+            <div className="mt-6 bg-gradient-to-r from-amber-50 to-orange-50 border-l-4 border-amber-500 p-4 rounded-lg">
+              <div className="flex items-start gap-3">
+                <div className="flex-shrink-0">
+                  <svg className="w-5 h-5 text-amber-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <p className="text-sm font-semibold text-amber-800 mb-1">Important Note About Rates</p>
+                  <p className="text-xs text-amber-700 leading-relaxed">
+                    <strong>These are tentative rates</strong> and may vary based on market conditions, material quality, quantity, and current metal prices. 
+                    Rates are updated regularly but can fluctuate daily. For the most accurate and current pricing, please call us at 
+                    <a href="tel:+918828700630" className="font-bold text-amber-900 hover:underline ml-1">+91 8828700630</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <p className="text-center text-gray-500 mt-4 text-sm">📞 Call <a href="tel:+918828700630" className="text-green-600 font-semibold hover:underline">+91 8828700630</a> for exact rates</p>
           </div>
         </div>

@@ -135,6 +135,7 @@ const WorkGallerySection = () => {
                     src={item.beforeImage}
                     alt={item.title}
                     className="w-full h-40 lg:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
                   />
                   
                   {/* Overlay */}
@@ -212,6 +213,7 @@ const WorkGallerySection = () => {
                 src={selectedImage.beforeImage}
                 alt={selectedImage.title}
                 className="w-full h-96 object-cover"
+                loading="lazy"
               />
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{selectedImage.title}</h3>

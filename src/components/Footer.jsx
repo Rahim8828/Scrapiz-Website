@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Facebook, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { toast } from '@/components/ui/use-toast';
+import { locationData } from '@/data/locationData';
 
 const Footer = () => {
   const quickLinks = [
@@ -29,6 +30,12 @@ const Footer = () => {
     { name: 'Junk Removal', path: '/services/junk-removal-service' },
   ];
 
+  // Generate location links from locationData
+  const locationLinks = Object.values(locationData).map(location => ({
+    name: `Scrap Buyers in ${location.name}`,
+    path: `/${location.slug}`
+  }));
+
   const socialLinks = [
     { icon: Facebook, name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61575801190925' },
     { icon: Instagram, name: 'Instagram', href: 'https://www.instagram.com/scrapiz.in/' },
@@ -39,7 +46,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 sm:px-6 py-8 sm:py-10 lg:py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-6">
           {/* Company Info */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -52,6 +59,7 @@ const Footer = () => {
                 src="/scrapiz-logo1.png" 
                 alt="Scrapiz Logo" 
                 className="h-16 sm:h-20 w-auto object-contain"
+                loading="lazy"
               />
             </Link>
             
@@ -122,6 +130,28 @@ const Footer = () => {
                   className="text-sm sm:text-base text-gray-300 hover:text-green-400 transition-colors duration-200 inline-block"
                 >
                   {service.name}
+                </Link>
+              ))}
+            </nav>
+          </motion.div>
+
+          {/* Our Locations */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.25 }}
+            className="space-y-3 sm:space-y-4"
+          >
+            <h3 className="text-base sm:text-lg font-semibold text-white">Our Locations</h3>
+            <nav className="flex flex-col gap-1.5 sm:gap-2" aria-label="Our Locations">
+              {locationLinks.map((location) => (
+                <Link
+                  key={location.path}
+                  to={location.path}
+                  className="text-sm sm:text-base text-gray-300 hover:text-green-400 transition-colors duration-200 inline-block"
+                >
+                  {location.name}
                 </Link>
               ))}
             </nav>
