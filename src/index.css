@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scrapiz-green: #2ecc71;
+  --scrapiz-dark: #333333;
+  --scrapiz-light: #f8f9fa;
+  --scrapiz-gray: #6c757d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-white text-gray-900 antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrapiz-gradient {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+}
+
+.scrapiz-shadow {
+  box-shadow: 0 10px 30px rgba(46, 204, 113, 0.2);
+}
+
+.scrapiz-hover-shadow {
+  transition: all 0.3s ease;
+}
+
+.scrapiz-hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(46, 204, 113, 0.3);
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(46, 204, 113, 0.07) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(46, 204, 113, 0.07) 0%, transparent 50%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.stats-counter {
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.1), rgba(39, 174, 96, 0.1));
+  border: 2px solid rgba(46, 204, 113, 0.2);
+}
+
+.form-container-card {
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-2xl shadow-green-500/10 border border-gray-100;
+  padding: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .form-container-card {
+    padding: 2rem;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 640px) {
+  /* Improve touch targets */
+  input, select, button, a {
+    min-height: 44px;
+  }
+  
+  /* Better spacing for mobile forms */
+  .form-container-card {
+    padding: 1.25rem;
+  }
+  
+  /* Prevent zoom on input focus for iOS */
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* Shi
+mmer animation for Today's Rate Banner */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite;
+}
+
+/* Pulse animation for notification dot */
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Custom Scrollbar for Price Estimator */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

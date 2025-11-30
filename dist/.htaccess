@@ -1,0 +1,35 @@
+# ======================================================================
+# BEHTAR AUR SAFE .HTACCESS FILE FOR APACHE (HOSTINGER)
+# ======================================================================
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+
+  # ----------------------------------------------------------------------
+  # 301 REDIRECTS (Old WordPress to New React)
+  # ----------------------------------------------------------------------
+  RewriteRule ^contact-us/?$ /contact [R=301,L]
+  RewriteRule ^terms-conditions/?$ /terms-and-conditions [R=301,L]
+  RewriteRule ^scrapiz-koliwada/?$ /dharavi-koliwada [R=301,L]
+  RewriteRule ^scrapiz-nala-sopara/?$ /nalasopara [R=301,L]
+  RewriteRule ^scrapiz-dharavi/?$ /dharavi [R=301,L]
+  RewriteRule ^scrapiz-bandra-east/?$ /bandra-east [R=301,L]
+  RewriteRule ^scrapiz-bandra/?$ /bandra [R=301,L]
+  RewriteRule ^scrapiz-kandivali/?$ /kandivali [R=301,L]
+  RewriteRule ^scrapiz-goregaon/?$ /goregaon [R=301,L]
+  RewriteRule ^sell-scrap-without-leaving-home-in-mumbai/?$ /blog/sell-scrap-without-leaving-home-in-mumbai [R=301,L]
+  RewriteRule ^best-price-for-scrap-metal-near-me-sell-now/?$ /blog/best-price-for-scrap-metal-near-me-sell-now [R=301,L]
+  RewriteRule ^sell-scrap-online-in-mumbai-instant-pickup-call-now/?$ /blog/sell-scrap-online-in-mumbai-instant-pickup-call-now [R=301,L]
+  
+  # ----------------------------------------------------------------------
+  # REACT ROUTER HANDLER (Yeh hamesha AAKHIR me hona chahiye)
+  # ----------------------------------------------------------------------
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+
+</IfModule>

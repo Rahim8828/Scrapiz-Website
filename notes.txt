@@ -1,0 +1,1 @@
+    // "build": "node tools/generate-llms.js || true && vite build",
